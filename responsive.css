@@ -1,27 +1,35 @@
-@media screen and (max-width: 1135px){
-    /*Landing Page*/
-    main .landing-page .title-box{
-        left: 80px;
+@media screen and (max-width: 1100px){
+    /*Video Learn*/
+    .video-learn img{
+        width: 90%;
+        margin-top: 0;
     }
-    .landing-page .title-box h1{
-        font-size: 52px;
-        line-height: 69px;
-        margin-bottom: 21px;
+    .video-learn h2{
+        font-size: 5.5vw;
+        top: 20.5vw;
     }
-    .landing-page .title-box p{
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 32px;
+    .video-learn button{
+        width: 20vw;
+        height: 7vw;
+        font-size: 2.3vw;
+        top: 33vw;
     }
-    .landing-page .title-box .btn{
-        width: 190px;
-        height: 60px;
+    /*Video Learn*/
+    /*Source Learn*/
+    .source-learn .source-items-container .source-item{
+        width: 30vw;
     }
-    .landing-page .landing-page-banner{
-        padding: 10px 0 35px 0;
-        right: 80px;
+    .source-items-container .source-item p{
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 18px;
     }
-
+    .source-items-container .source-item h2{
+        font-size: 33px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    /*Source Learn*/
 }
 @media screen and (max-width: 1024px){
     /*Main Header*/
@@ -30,20 +38,52 @@
     }
     /*Main Header*/
     /*Landing Page*/
-
+    main .landing-page{
+        padding: 33px 82px 15px 88px;
+        margin-bottom: 50px;
+    }
+    .landing-page .title-box{
+        left: 40px;
+    }
+    .landing-page .title-box h1{
+        font-size: 3.7vw;
+        line-height: 4.5vw;
+        margin-bottom: 20px;
+        margin-top: 18px;
+    }
+    .landing-page .title-box p{
+        font-size: 1.7vw;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    .landing-page .title-box .btn{
+        width: 180px;
+        height: 50px;
+        font-size: 19px;
+        line-height: 23px;
+        margin-right: 40px;
+    }
+    .landing-page .landing-page-banner{
+        right: 40px;
+    }
+    .landing-page .landing-page-banner img{
+        width: clamp(500px, 47vw, 47vw);
+    }
     /*Landing Page*/
+
 }
 @media screen and (max-width: 970px){
+    /*Main Header*/
     .main-header .right-part .navigation-menu {
-        /*Main Header*/
         column-gap: 1.8vw;
     }
     .main-header .right-part .navigation-btn{
         margin-left: 2vw;
     }
     /*Main Header*/
-    /*Landing Page*/
+
 }
+
 @media screen and (max-width: 920px){
     /*Main Header*/
     .main-header{
@@ -75,15 +115,136 @@
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 1px;
-        padding: 7px 16px;
+        padding: 11px 16px;
     }
     /*Main Header*/
     /*Landing Page*/
+    main .landing-page{
+        padding: 16px 41px 7px 44px;
+        margin-bottom: 50px;
+    }
+    .landing-page .title-box{
+        left: 40px;
+    }
+    .landing-page .title-box h1{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .landing-page .title-box p{
+        margin-bottom: 20px;
+    }
+    .landing-page .title-box .btn{
+        font-size: 17px;
+        margin-right: 30px;
+    }
+    .landing-page .landing-page-banner{
+        right: 30px;
+    }
+    .landing-page .landing-page-banner img{
+        width: 450px;
+    }
+    /*Landing Page*/
+
 }
+
+
+
 @media screen and (max-width: 768px){
     /*Main Header*/
+    .main-header .right-part .navigation-menu {
+        display: none;
+    }
+    /*Main Header*/
+    /*Landing Page*/
+    main .landing-page{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        position: relative;
+    }
+    .landing-page .landing-page-banner{
+        position: unset;
+        display: contents;
+    }
+    .landing-page .landing-page-banner img{
+        width: 95%;
+        margin-top: 12%;
+    }
+    .landing-page .title-box{
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+        left: 2.2vw;
+    }
+    .landing-page .title-box h1{
+        width: 90%;
+        font-size: 11vw;
+        line-height: 10vw;
+        margin: 0;
+    }
+    .landing-page .title-box p{
+        width: 90%;
+        font-size: 4vw;
+        line-height: 4.5vw;
+        margin-bottom: 2vw;
+        margin-top: 36vw;
+    }
+    .landing-page .title-box .title-btn{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .landing-page .title-box .btn{
+        width: 100%;
+        margin-right: 5%;
+    }
+    /*Video Learn*/
+    .video-learn img{
+        margin-top: 115px;
+    }
+    .video-learn h2{
+        top: 35.5vw;
+    }
+    .video-learn button{
+        top: 49vw;
+    }
+    /*Video Learn*/
+    /*Source Learn*/
+    .source-learn{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .source-learn .source-items-container .source-item{
+        width: 60%;
+    }
+    .source-learn .position-item-1{
+        top: 20px;
+        display: flex;
+        justify-content: end;
+    }
+    .source-learn .position-item-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 575px){
+    /*Video Learn*/
+    .video-learn img{
+        margin-top: 90px;
+    }
+    /*Video Learn*/
+}
+
+
+@media screen and (max-width: 480px){
+    /*Main Header*/
     .main-header{
-        padding: 6px 8px 4px 3px;
+        padding: 6px 8px 4px 0;
     }
     .main-header .left-part svg{
         width: 84px;
@@ -93,56 +254,24 @@
         font-size: 22px;
         line-height: 26px;
     }
-    .main-header .right-part .navigation-menu {
-        column-gap: 1.4vw;
-    }
-    .main-header .right-part .navigation-menu a{
-        font-size: 11px;
-        line-height: 13px;
-        letter-spacing: .82px;
-        padding: 4px;
-    }
     .main-header .right-part .navigation-btn{
         font-size: 11px;
         line-height: 13px;
         letter-spacing: .82px;
-        padding: 6px 13.5px;
+        padding: 10px 13.5px;
         margin-left: 1.6vw;
     }
     /*Main Header*/
-    /*Landing Page*/
-    
-}
-@media screen and (max-width: 575px){
-    /*Main Header*/
-    .main-header .left-part h3{
-        font-size: 18px;
-        line-height: 20px;
+    /*Video Learn*/
+    .video-learn img{
+        width: 97%;
+        margin-top: 40px;
     }
-    .main-header .right-part .navigation-menu a{
-        font-size: 10px;
-        line-height: 11px;
-        letter-spacing: .72px;
-        padding: 3px;
+    .video-learn h2{
+        top: 30vw;
     }
-    .main-header .right-part .navigation-btn{
-        font-size: 10px;
-        line-height: 11px;
-        letter-spacing: .72px;
-        padding: 6px 11.5px;
-        margin-left: 1.5vw;
+    .video-learn button{
+        top: 49vw;
     }
-    /*Main Header*/
-    /*Landing Page*/
-}
-@media screen and (max-width: 480px){
-    /*Main Header*/
-    .main-header{
-        padding: 6px 8px 4px 3px;
-    }
-    .main-header .right-part .navigation-menu {
-        display: none;
-    }
-    /*Main Header*/
-    /*Landing Page*/
+    /*Video Learn*/
 }

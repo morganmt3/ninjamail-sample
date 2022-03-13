@@ -70,8 +70,10 @@ main .landing-page{
     align-items: center;
     justify-content: center;
     padding: 66px 163px 30px 176px;
+    margin-bottom: 100px;
 }
 .landing-page .title-box{
+    width: 38vw;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -79,24 +81,21 @@ main .landing-page{
     left: 50px;
 }
 .landing-page .title-box h1{
-    width: 489px;
-    height: 149px;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
-    font-size: 59px;
-    line-height: 71px;
+    font-size: 3.8vw;
+    line-height: 5vw;
     text-transform: capitalize;
     color: var(--text-color);
     margin-bottom: 23px;
+    margin-top: 20px;
 }
 .landing-page .title-box p{
-    width: 446px;
-    height: 52px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 1.3vw;
     line-height: 26px;
     color: var(--text-color);
     margin-bottom: 35px;
@@ -118,21 +117,125 @@ main .landing-page{
     font-size: 21px;
     line-height: 25px;
     margin-right: 45px;
+    cursor: pointer;
 }
 .landing-page .title-box .active{
     background-color: var(--green-color);
     color: var(--primary-color);
 }
 .landing-page .landing-page-banner{
-    width: 721px;
-    height: 481px;
-    padding: 20px 20px 70px 20px;
     position: relative;
     right: 50px;
-    top: 35px;
 }
 .landing-page .landing-page-banner img{
+    width: clamp(600px, 47vw, 47vw);
     box-shadow: 0 3px 6px rgba(0,0,0,0.19);
 }
-
 /*Landing Page*/
+/*Video Learn*/
+.video-learn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0;
+}
+.video-learn img{
+    width: 72vw;
+}
+.video-learn h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.3vw;
+    line-height: 80px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    position: absolute;
+    top: 13.5vw;
+}
+.video-learn button{
+    width: 15vw;
+    height: 5vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.7vw;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+    border: 0;
+    color: var(--green-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    position: absolute;
+    top: 24vw;
+}
+/*Video Learn*/
+/*Source Learn*/
+.source-learn{
+    background-color: #CAEAC7;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.source-learn .source-items-container{
+    margin: 0 1.5%;
+}
+.source-learn .source-items-container .source-item{
+    width: 22vw;
+    background-color: var(--primary-color);
+    padding-bottom: 20px;
+}
+.source-items-container .source-item img{
+    width: 100%;
+}
+.source-items-container .source-item p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color);
+    padding: 24px 39px 10px 30px;
+}
+.source-items-container .source-item a{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--green-color);
+    padding-left: 30px;
+}
+.source-learn .position-item-1{
+    position: relative;
+    top: 60px;
+}
+.source-items-container .source-item h2{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+.source-learn .position-item-2 p{
+    padding: 0;
+}
+.source-learn .position-item-2 .source-item{
+    background-color: transparent;
+}
+.source-learn .position-item-2{
+    position: relative;
+    top: 100px;
+}
+/*Source Learn*/
