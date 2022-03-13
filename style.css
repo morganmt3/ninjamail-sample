@@ -176,7 +176,6 @@ main .landing-page{
 /*Source Learn*/
 .source-learn{
     background-color: #CAEAC7;
-    background-size: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
